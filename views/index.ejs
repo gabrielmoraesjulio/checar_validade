@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Validade</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h1>Cadastre um produto</h1>
+    <%- include("./partials/form") %>
+    
+    <h1>Todos os Produtos</h1>
+    <%- include("./partials/products") %>
+    
+    <h1>Vão vencer nos próximos 7 dias</h1>
+    <%- include("./partials/validity") %>
+    
+    <h1>Produtos ja vencidos nos ultimos 7 dias</h1>
+    <%- include("./partials/overdue") %> 
+</body>
+</html>

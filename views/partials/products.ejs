@@ -1,0 +1,21 @@
+<table>
+    <tr>
+      <th>Nome</th>
+      <th>Peso</th>
+      <th>Validade</th>
+      <th>Deletar</th>
+    </tr>
+    <% products.forEach((allProducts) => { %>
+        <tr>
+          <td><%= allProducts.name %></td>
+          <td><%= allProducts.weight %></td>
+          <td><%= allProducts.validity %></td>
+          <td>
+            <form action="/delete" method="post">
+              <input type="hidden" name="idDeletar" value="<%= allProducts.id %>">
+              <button type="submit">DELETAR</button>
+            </form>
+          </td>
+        </tr>
+    <% }) %>
+  </table>
